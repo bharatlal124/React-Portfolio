@@ -24,7 +24,7 @@ const Contact = () => {
     setStatus({ message: "Sending...", type: "info" });
 
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch("https://react-portfolio-1-5lub.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
